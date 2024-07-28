@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+:root {
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+
+    --bg-prim: white;
+    --font-prim: black;
+    --acc: rgb(90, 60, 226);
+}
+
+body {
+    background-color: var(--bg-prim);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+a,
+p {
+    color: var(--font-prim);
+
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 2dvw, 5rem);
+    font-weight: 300;
+}
+
+h2 {
+    font-size: clamp(2rem, 1.5dvw, 3.75rem);
+    font-weight: 300;
+}
+
+h4 {
+    font-size: clamp(1rem, 0.75dvw, 3rem);
+    font-weight: 300;
+}
+
+h5 {
+    font-size: clamp(3rem, 3dvw, 10rem);
+    font-weight: 400;
+}
+
+h6 {
+    font-size: clamp(4rem, 4dvw, 10rem);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    background: linear-gradient(var(--acc) 0 0) 
+    bottom center/
+    var(--underline-width, 0%) 0.2rem
+    no-repeat;
+    
+    transition: background 0.25s ease-in-out, color 0.1s ease-in-out;
+}
+
+p {
+    font-size: clamp(2rem, 1.25dvw, 4rem);
+}
+
+.acc {
+    color: var(--acc);
+}
+
+a:hover {
+    color: var(--acc);
+    --underline-width:100%
+}
+
+nav {
+    display: flex;
+    height: 10rem;
+    background-color: var();
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+}
