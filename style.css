@@ -13,8 +13,13 @@
 
     --fc-prim: white;
     
-    --acc: rgb(0, 81, 255);
+    --acc: rgb(50, 115, 255);
     --warn: rgb(255, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -23,8 +28,9 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 10rem);
-    padding: 4rem 20%;
+    margin-top: 5rem;
+    min-height: calc(100vh - 18rem);
+    padding: 4rem 20% 4rem 20%;
 }
 
 h1 {
@@ -100,6 +106,11 @@ nav {
     align-items: center;
     font-size: clamp(1.25rem, 1dvw, 3.75rem);
     font-weight: 400;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    top: 0;
 }
 
 nav ul {
